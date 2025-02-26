@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+
+</head>
+<body>
+<h1>Welcome, <%= user.username %>!</h1>
+<nav>
+    <ul>
+        <li><a href="/qr">QR Code Generator</a></li>
+        <li><a href="/email">Send Email</a></li>
+        <li><a href="/bmi">BMI Calculator</a></li>
+        <li><a href="/weather">Weather API</a></li>
+        <li><a href="/crud">Task Manager (CRUD)</a></li>
+    </ul>
+</nav>
+<a href="/logout">Logout</a>
+</body>
+</html>

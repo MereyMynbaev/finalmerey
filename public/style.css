@@ -1,0 +1,180 @@
+/* 🌐 Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* 📌 Navigation Bar */
+.navbar {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* 📍 Centered Form Style */
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* 🏠 Home / Dashboard */
+.dashboard-container {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔑 Login & Register */
+#login-page, #register-page {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-page .form-container, #register-page .form-container {
+    background: white;
+}
+
+/* 📧 Email Page */
+#email-page {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    height: 100vh;
+}
+
+#email-page .form-container {
+    background: white;
+}
+
+/* 🔲 QR Code Page */
+#qr-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.qr-image {
+    margin-top: 20px;
+    border: 2px solid #333;
+    padding: 10px;
+    background: white;
+}
+
+/* 📊 BMI Calculator */
+#bmi-page {
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    height: 100vh;
+}
+
+#bmi-page .form-container {
+    background: white;
+}
+
+/* 🌤️ Weather Page */
+#weather-page {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    height: 100vh;
+}
+
+.weather-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.weather-box {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* 📋 CRUD Page */
+#crud-page {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.crud-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #007BFF;
+    color: white;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .crud-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

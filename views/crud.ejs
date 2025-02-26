@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="/tasks.css">
+
+</head>
+
+<form action="/add-task" method="POST">
+    <input type="text" name="task" placeholder="Enter task" required>
+    <button type="submit">Add Task</button>
+</form>
+<ul>
+    <% tasks.forEach(task => { %>
+        <li>
+            <%= task.task %>
+            <form action="/delete-task" method="POST" style="display:inline;">
+                <input type="hidden" name="taskId" value="<%= task._id %>">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>

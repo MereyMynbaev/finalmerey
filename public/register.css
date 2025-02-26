@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px; /* Adds space between login and register */
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Register Link Styled as a Button */
+.register-btn {
+    display: block; /* Makes it behave like a button */
+    width: auto; /* Prevents full-width stretching */
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #28a745; /* Green */
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #218838;
+}
+

@@ -1,0 +1,14 @@
+<head>
+    <link rel="stylesheet" href="/bmi.css">
+
+</head>
+
+<form action="/bmi" method="POST">
+    <input type="number" name="weight" placeholder="Weight (kg)" required>
+    <input type="number" name="height" placeholder="Height (m)" step="0.01" required>
+    <button type="submit">Calculate BMI</button>
+</form>
+
+<% if (bmi !== null) { %>
+    <h3>Your BMI: <%= bmi %></h3>
+<% } %>

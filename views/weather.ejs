@@ -1,0 +1,14 @@
+
+<body><link rel="stylesheet" href="/weather.css">
+</body>
+<form action="/weather" method="POST">
+    <input type="text" name="city" placeholder="Enter city name" required>
+    <button type="submit">Get Weather</button>
+</form>
+
+<% if (weather) { %>
+    <h3>Temperature: <%= weather.main.temp %>°C</h3>
+    <h3>Weather: <%= weather.weather[0].description %></h3>
+<% } else if (error) { %>
+    <h3 style="color: red;"><%= error %></h3>
+<% } %>
